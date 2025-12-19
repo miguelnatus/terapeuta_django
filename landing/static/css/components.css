@@ -1,0 +1,101 @@
+/* VARIÁVEIS */
+:root {
+  --moss-green: #5a7a6b;
+  --moss-green-dark: #3a5a4b;
+  --warm-orange: #d97e4a;
+  --warm-beige-light: #f5f0e8;
+  --warm-beige: #e8dcc8;
+  --radius: 1rem;
+}
+
+/* BOTÕES */
+.btn-primary, .btn-accent, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transform: translateY(0);
+  font-family: 'Lora', serif;
+}
+
+.btn-primary {
+  background-color: var(--moss-green);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--moss-green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(90,122,107,0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--moss-green);
+  border: 2px solid var(--moss-green);
+}
+.btn-secondary:hover {
+  background-color: var(--moss-green);
+  color: white;
+}
+
+.btn-accent {
+  background-color: var(--warm-orange);
+  color: white;
+}
+.btn-accent:hover {
+  background-color: #c86a38;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(217,126,74,0.3);
+}
+
+/* CARDS */
+.card-wellness {
+  padding: 1.5rem;
+  margin: 0.5rem 0;
+  background-color: var(--warm-beige-light);
+  border: 1px solid var(--warm-beige);
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+.card-wellness:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(90,122,107,0.15);
+}
+
+/* UTILITÁRIOS */
+.section-divider {
+  margin: 4rem 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--warm-beige), transparent);
+}
+
+.text-moss-green { color: var(--moss-green) !important; }
+.text-text-dark { color: #3d3d3d !important; }
+.text-text-light { color: #6b6b6b !important; }
+.font-playfair { font-family: 'Playfair Display', serif; }
+.bg-warm-beige-light { background-color: var(--warm-beige-light) !important; }
+.bg-white { background-color: white !important; }
+.rounded-2xl { border-radius: var(--radius) !important; }
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* CONTAINER RESPONSIVO */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (min-width: 640px) { .container { padding: 0 1.5rem; } }
+@media (min-width: 1024px) { .container { padding: 0 2rem; max-width: 1280px; } }

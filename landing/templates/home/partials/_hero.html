@@ -1,0 +1,41 @@
+{% load static %}
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <div class="absolute inset-0 bg-cover bg-center" 
+         style="background-image: url('{% static 'images/hero-background.jpg' %}'); background-position: center 30%;">
+        <div class="absolute inset-0 bg-gradient-to-r from-white/70 via-white/50 to-transparent"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10 max-w-2xl">
+        <div class="fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold text-moss-green mb-6 leading-tight font-playfair">
+                Cuidar de você também é cuidar do seu relacionamento.
+            </h1>
+            <p class="text-lg md:text-xl text-text-dark mb-8 leading-relaxed font-light">
+                Um espaço terapêutico seguro para mulheres que desejam compreender seus sentimentos, fortalecer sua autonomia emocional e restaurar vínculos afetivos com mais maturidade, diálogo e esperança.
+            </p>
+            <p class="text-base md:text-lg text-text-light mb-10 leading-relaxed">
+                Atendimento individual ou em casal, com escuta qualificada, respeito e clareza.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="https://wa.me/5547988721507?text=Olá%20Daniel,%20gostaria%20de%20agendar%20uma%20sessão" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-accent inline-flex items-center justify-center gap-2">
+                    Agendar Sessão 
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+                <a href="https://wa.me/5547988721507?text=Olá%20Daniel,%20gostaria%20de%20conversar%20sobre%20a%20terapia" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-secondary inline-flex items-center justify-center gap-2">
+                    Falar no WhatsApp 
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18 10a8 8 0 0 0-14.4-4.24l1.72 1.72A6 6 0 1 1 9.88 15.12l2.12-2.12a3 3 0 1 1 4.24 4.24l1.72 1.72A8 8 0 0 0 18 10z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
