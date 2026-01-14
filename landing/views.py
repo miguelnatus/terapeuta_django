@@ -39,3 +39,7 @@ class HomeView(TemplateView):
         
         # Adicione outras listas de features conforme necessário
         return context
+    
+
+class HomeView2(TemplateView):
+    template_name = 'home/index2.html'
