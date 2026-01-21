@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import HomeView, HomeView2
+from .views import  Drel1, Dtrel1
 
 urlpatterns = [
-    path('d-rel-1/', HomeView.as_view(), name='home'),
-    path('dt-rel-1/', HomeView2.as_view(), name='home2'),
+    path('d-rel-1/', Drel1.as_view(), name='drel1'),
+    path('dt-rel-1/', Dtrel1.as_view(), name='dtrel1'), 
 ]
