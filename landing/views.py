@@ -10,5 +10,11 @@ class Drel2(TemplateView):
 class Dfem1(TemplateView):
     template_name = 'home/d-fem-1.html'
 
+class Dfem2(TemplateView):
+    template_name = 'home/d-fem-2.html'
+
+class Dfem3(TemplateView):
+    template_name = 'home/d-fem-3.html'
+
 class Dtrel1(TemplateView):
     template_name = 'home/dt-rel-1.html'
