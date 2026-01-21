@@ -18,3 +18,6 @@ class Dfem3(TemplateView):
 
 class Dtrel1(TemplateView):
     template_name = 'home/dt-rel-1.html'
+
+class BioIg(TemplateView):
+    template_name = 'home/bio-ig.html'
